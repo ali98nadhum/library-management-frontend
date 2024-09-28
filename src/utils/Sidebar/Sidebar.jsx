@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./sidebar.module.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Sidebar = () => {
   return (
@@ -10,7 +12,7 @@ const Sidebar = () => {
         </h2>
       </div>
       <hr />
-     
+      <button className="btn btn-primary">اضغط هنا</button>
     </div>
   );
 };
