@@ -1,11 +1,13 @@
 .sidebarSec{
-  direction: rtl;
+  position: fixed;
+  right: 0;
+  top: 80px;
 }
 
 
 
 .sidebar {
-    width: 15%;
+    width: 220px;
     height: 100vh;
     background-color: rgb(18, 22, 33);
 }
