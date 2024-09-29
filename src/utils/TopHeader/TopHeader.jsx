@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, Avatar, Menu, MenuItem, Badge,
 import { Notifications as NotificationsIcon, Logout as LogoutIcon } from "@mui/icons-material";
 
 const TopHeader = () => {
-  const userName = "Ali"; // اسم المستخدم، يمكن تغييره حسب الحاجة
+  const userName = "Ali";
   const [anchorEl, setAnchorEl] = useState(null);
   const [notifications, setNotifications] = useState([
     "إشعار 1: لديك رسالة جديدة",
@@ -27,17 +27,17 @@ const TopHeader = () => {
   return (
     <AppBar position="static" color="primary">
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-        {/* زر تسجيل الخروج في الجانب الأيسر */}
+      
         <Button
           variant="contained"
           startIcon={<LogoutIcon />}
           onClick={handleLogout}
-          sx={{ backgroundColor: "red", "&:hover": { backgroundColor: "#cc0000" } }} // اللون الأحمر مع ظل عند التمرير
+          sx={{ backgroundColor: "red", "&:hover": { backgroundColor: "#cc0000" } }} 
         >
           تسجيل الخروج
         </Button>
 
-        {/* القسم الأيمن: صورة المستخدم، الاسم، وأيقونة الإشعارات */}
+
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <IconButton color="inherit" onClick={handleNotificationsClick}>
             <Badge badgeContent={notifications.length} color="error">
@@ -49,7 +49,7 @@ const TopHeader = () => {
         </div>
       </Toolbar>
 
-      {/* قائمة الإشعارات */}
+   
       <Menu
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
