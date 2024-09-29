@@ -1,16 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./utils/Header/Header";
 import Sidebar from "./utils/Sidebar/Sidebar";
+import HomePage from "./components/HomePage/HomePage";
 
 
 function App() {
   return (
     <Router>
-      <div className="page-slice">
         <Header />
-        <Sidebar />
-      </div>
-      <Routes></Routes>
+        {/* <Sidebar /> */}
+      <Routes>
+        {/* <Route path="/" element={ <HomePage/ }/> */}
+      </Routes>
     </Router>
   );
 }

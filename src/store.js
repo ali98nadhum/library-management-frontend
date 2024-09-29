@@ -5,13 +5,14 @@ export const useStore = create((set, get) => ({
 
 
     categoryData: [],
-  fetchCategory: async () => {
-    try {
-      const response = await axios.get("http://localhost:8000/api/category");
-      set({ categoryData: response.data.data });
-    } catch (error) {
-      console.error("Error fetching data", error);
+    fetchCategory: async () => {
+      try {
+        const res = await axios.get("http://localhost:8000/api/book")
+        set({ categoryData: res.data.data });
+      } catch (error) {
+        console.log(error.message);
+        
+      }
     }
-  },
   
 }));
