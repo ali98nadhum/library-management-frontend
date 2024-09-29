@@ -3,6 +3,7 @@ import style from "./sidebar.module.css";
 
 const Sidebar = () => {
   return (
+    <div className={style.sidebarSec}>
     <div className={style.sidebar}>
       <div className={style.logo}>
         <h2>
@@ -85,6 +86,7 @@ const Sidebar = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };

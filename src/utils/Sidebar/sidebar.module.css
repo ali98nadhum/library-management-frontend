@@ -1,3 +1,9 @@
+.sidebarSec{
+  direction: rtl;
+}
+
+
+
 .sidebar {
     width: 15%;
     height: 100vh;
@@ -7,7 +13,7 @@
 .sidebar .logo {
     padding: 10px;
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .sidebar .logo h2 {
@@ -29,12 +35,13 @@
 }
 
 
+
 .sidebar .list{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 20px;
 }
 
@@ -63,4 +70,5 @@
     color: white !important; 
   }
   
+
   
