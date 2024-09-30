@@ -5,9 +5,15 @@
 
 
 .home .topHome{
-    /* background-color: red; */
+    background-color: red;
     width: 100%;
     padding: 10px;
+}
+
+.home .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px 30px;
 }
 
 
