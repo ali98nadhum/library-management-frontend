@@ -35,7 +35,7 @@ const HomePage = () => {
             <div className={style.card}>
               <div className={style.leftSec}>
                 <h3> ايرادات الاسبوع </h3>
-                <p>121</p>
+                <p>IQD 121</p>
               </div>
               <div className={style.rightSec}>
                 <img src={saleIcon} alt="book-icon" />
