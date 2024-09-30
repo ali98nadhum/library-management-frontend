@@ -4,6 +4,7 @@ import Container from "../../utils/Container/Container";
 import bookIcon from "../../assets/book-icon.png";
 import orderIcon from "../../assets/order-icon.png";
 import saleIcon from "../../assets/money-transfer.png";
+import BarChart from "../BarChart/BarChart";
 
 const HomePage = () => {
   return (
@@ -42,6 +43,9 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={style.BarChart}>
+        <BarChart/>
         </div>
       </Container>
     </div>
